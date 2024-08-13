@@ -1,3 +1,3 @@
 pickle
-streamlit
 tmdbv3api
+streamlit

@@ -34,7 +34,7 @@ def get_recommendations(title):
         if image_path:
             image_path = "https://image.tmdb.org/t/p/w500/" + details['poster_path']
         else:
-            image_path = 'no_image.jpg'
+            image_path = 'test_project/no_image.jpg'
 
         images.append(image_path)
 
@@ -44,8 +44,8 @@ def get_recommendations(title):
 
 
 
-movies = pickle.load(open("movies.pickle", "rb"))
-cosine_sim = pickle.load(open("cosine_sim.pickle", "rb"))
+movies = pickle.load(open("test_project/movies.pickle", "rb"))
+cosine_sim = pickle.load(open("test_project/cosine_sim.pickle", "rb"))
 
 st.set_page_config(layout='wide') # 화면을 더 넓게 보기
 st.header('Notflix')

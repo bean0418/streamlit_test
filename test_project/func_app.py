@@ -7,8 +7,8 @@ from ast import literal_eval
 import pickle
 
 # Load data
-df1 = pd.read_csv("tmdb_5000_credits.csv")
-df2 = pd.read_csv("tmdb_5000_movies.csv")
+df1 = pd.read_csv("test_project/tmdb_5000_credits.csv")
+df2 = pd.read_csv("test_project/tmdb_5000_movies.csv")
 
 # Rename columns for merging
 df1.columns = ['id', 'title', 'cast', 'crew']

@@ -131,7 +131,7 @@ def get_recommendations(title):
         if image_path:
             image_path = "https://image.tmdb.org/t/p/w500/" + details['poster_path']
         else:
-            image_path = 'no_image.jpg'
+            image_path = 'test_project/no_image.jpg'
 
         images.append(image_path)
 

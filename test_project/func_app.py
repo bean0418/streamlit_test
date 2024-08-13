@@ -7,8 +7,8 @@ from ast import literal_eval
 import pickle
 
 # Load data
-df1 = pd.read_csv("tmdb_5000_credits.csv")
-df2 = pd.read_csv("tmdb_5000_movies.csv")
+df1 = pd.read_csv("test_project/tmdb_5000_credits.csv")
+df2 = pd.read_csv("test_project/tmdb_5000_movies.csv")
 
 # Rename columns for merging
 df1.columns = ['id', 'title', 'cast', 'crew']
@@ -131,7 +131,7 @@ def get_recommendations(title):
         if image_path:
             image_path = "https://image.tmdb.org/t/p/w500/" + details['poster_path']
         else:
-            image_path = 'no_image.jpg'
+            image_path = 'test_project/no_image.jpg'
 
         images.append(image_path)
 
@@ -145,7 +145,7 @@ def get_recommendations(title):
 # cosine_sim = pickle.load(open("cosine_sim.pickle", "rb"))
 
 st.set_page_config(layout='wide') # 화면을 더 넓게 보기
-st.header('Movie Recommendations')
+st.header('Notflix')
 
 movie_list = movies['title'].values
 title = st.selectbox('Choose a movie you like', movie_list)

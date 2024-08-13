@@ -145,7 +145,7 @@ def get_recommendations(title):
 # cosine_sim = pickle.load(open("cosine_sim.pickle", "rb"))
 
 st.set_page_config(layout='wide') # 화면을 더 넓게 보기
-st.header('Movie Recommendations')
+st.header('Notflix')
 
 movie_list = movies['title'].values
 title = st.selectbox('Choose a movie you like', movie_list)

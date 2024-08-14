@@ -57,8 +57,8 @@ def get_recommendations(title):
 
 
 
-movies = pickle.load(open("movies.pickle", "rb"))
-cosine_sim = pickle.load(open("cosine_sim.pickle", "rb"))
+movies = pickle.load(open("test_project/movies.pickle", "rb"))
+cosine_sim = pickle.load(open("test_project/cosine_sim.pickle", "rb"))
 
 st.set_page_config(layout='wide') # 화면을 더 넓게 보기
 st.header('Notflix')
